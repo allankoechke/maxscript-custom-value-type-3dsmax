@@ -10,16 +10,16 @@
 // AUTHOR: 
 //***************************************************************************/
 
-#include "case19732922.h"
+#include "MaxCustomValue.h"
 
-#define case19732922_CLASS_ID Class_ID(0x797fb4df, 0x922d7af7)
+#define MaxCustomValue_CLASS_ID Class_ID(0x797fb4df, 0x922d7af7)
 
-class case19732922 : public GUP
+class MaxCustomValue : public GUP
 {
 public:
 	// Constructor/Destructor
-	case19732922();
-	virtual ~case19732922();
+	MaxCustomValue();
+	virtual ~MaxCustomValue();
 
 	// GUP Methods
 	DWORD Start() override;
@@ -33,71 +33,71 @@ public:
 };
 
 
-class case19732922ClassDesc : public ClassDesc2 
+class MaxCustomValueClassDesc : public ClassDesc2 
 {
 public:
 	int           IsPublic() override                               { return TRUE; }
-	void*         Create(BOOL /*loading = FALSE*/) override         { return new case19732922(); }
+	void*         Create(BOOL /*loading = FALSE*/) override         { return new MaxCustomValue(); }
 	const TCHAR*  ClassName() override                              { return GetString(IDS_CLASS_NAME); }
-	const TCHAR*  NonLocalizedClassName() override                  { return _T("case19732922"); }
+	const TCHAR*  NonLocalizedClassName() override                  { return _T("MaxCustomValue"); }
 	SClass_ID     SuperClassID() override                           { return GUP_CLASS_ID; }
-	Class_ID      ClassID() override                                { return case19732922_CLASS_ID; }
+	Class_ID      ClassID() override                                { return MaxCustomValue_CLASS_ID; }
 	const TCHAR*  Category() override                               { return GetString(IDS_CATEGORY); }
 
-	const TCHAR*  InternalName() override                           { return _T("case19732922"); } // Returns fixed parsable name (scripter-visible name)
+	const TCHAR*  InternalName() override                           { return _T("MaxCustomValue"); } // Returns fixed parsable name (scripter-visible name)
 	HINSTANCE     HInstance() override                              { return hInstance; } // Returns owning module handle
 
 
 };
 
-ClassDesc2* Getcase19732922Desc()
+ClassDesc2* GetMaxCustomValueDesc()
 {
-	static case19732922ClassDesc case19732922Desc;
-	return &case19732922Desc; 
+	static MaxCustomValueClassDesc MaxCustomValueDesc;
+	return &MaxCustomValueDesc; 
 }
 
 
 
 
-case19732922::case19732922()
+MaxCustomValue::MaxCustomValue()
 {
 
 }
 
-case19732922::~case19732922()
+MaxCustomValue::~MaxCustomValue()
 {
 
 }
 
-void case19732922::DeleteThis()
+void MaxCustomValue::DeleteThis()
 {
 	delete this;
 }
 
 // Activate and Stay Resident
-DWORD case19732922::Start()
+DWORD MaxCustomValue::Start()
 {
 #pragma message(TODO("Do plugin initialization here"))
 #pragma message(TODO("Return if you want remain loaded or not"))
 	return GUPRESULT_KEEP;
 }
 
-void case19732922::Stop()
+void MaxCustomValue::Stop()
 {
 #pragma message(TODO("Do plugin un-initialization here"))
 }
 
-DWORD_PTR case19732922::Control(DWORD /*parameter*/)
+DWORD_PTR MaxCustomValue::Control(DWORD /*parameter*/)
 {
 	return 0;
 }
 
-IOResult case19732922::Save(ISave* /*isave*/)
+IOResult MaxCustomValue::Save(ISave* /*isave*/)
 {
 	return IO_OK;
 }
 
-IOResult case19732922::Load(ILoad* /*iload*/)
+IOResult MaxCustomValue::Load(ILoad* /*iload*/)
 {
 	return IO_OK;
 }

@@ -10,9 +10,9 @@
 // AUTHOR: 
 //***************************************************************************/
 
-#include "case19732922.h"
+#include "MaxCustomValue.h"
 
-extern ClassDesc2* Getcase19732922Desc();
+extern ClassDesc2* GetMaxCustomValueDesc();
 
 HINSTANCE hInstance;
 int controlsInit = FALSE;
@@ -55,7 +55,7 @@ __declspec( dllexport ) ClassDesc* LibClassDesc(int i)
 {
 	switch(i)
 	{
-		case 0: return Getcase19732922Desc();
+		case 0: return GetMaxCustomValueDesc();
 		default: return 0;
 	}
 }

@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Developer Studio generated include file.
-// Used by case19732922.rc
+// Used by MaxCustomValue.rc
 //
 
 

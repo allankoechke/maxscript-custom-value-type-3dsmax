@@ -1,4 +1,4 @@
-LIBRARY case19732922.gup
+LIBRARY maxcustomvalue.gup
 EXPORTS
    LibDescription       @1       PRIVATE
    LibNumberClasses     @2       PRIVATE

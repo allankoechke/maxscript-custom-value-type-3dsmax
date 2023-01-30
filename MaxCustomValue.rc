@@ -100,7 +100,7 @@ STRINGTABLE DISCARDABLE
 BEGIN
     IDS_LIBDESCRIPTION      "adn samples"
     IDS_CATEGORY            "adn samples"
-    IDS_CLASS_NAME          "case19732922"
+    IDS_CLASS_NAME          "MaxCustomValue"
     IDS_PARAMS              "Parameters"
     IDS_SPIN                "Spin"
  //TEX_TYPE
