@@ -4,4 +4,4 @@
 > Check Blog at [Github](https://github.com/allankkoech/mne-blogs/blob/master/building-custom-value-type-for-maxscrip.md) | [Typepad]()  
 > Project described in the blog
 >
-> // Add release version
+Developed for 3ds Max 2024
